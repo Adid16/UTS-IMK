@@ -13,13 +13,20 @@
       <div class="content">
         <h2>BMW</h2>
         <h1>G 310 RR</h1>
-        <p>
-          Motor BMW adalah sepeda motor buatan BMW Motorrad, divisi sepeda motor
-          dari perusahaan otomotif Jerman, BMW. Motor BMW dikenal luas karena
-          desain premium, teknologi canggih, dan performa tinggi, serta
-          reputasinya dalam dunia tur, petualangan, dan motorsport.
-        </p>
         <h3>Tentukan Pilihan Warna</h3>
+        <div class="colour-select-mobile">
+          <div id="redmobile"></div>
+          <div id="bluemobile"></div>
+          <div id="blackmobile"></div>
+        </div>
+        <div class="image-mobile">
+          <img id="bikemobile" src="image/BMW1mobile.png" alt="" />
+        </div>
+        <p>
+          Motor BMW adalah sepeda motor buatan BMW Motorrad, divisi sepeda motor dari perusahaan otomotif Jerman, BMW. Motor BMW dikenal luas karena desain premium, teknologi canggih, dan performa tinggi, serta reputasinya dalam dunia tur,
+          petualangan, dan motorsport.
+        </p>
+
         <div class="colour-select">
           <div id="red"></div>
           <div id="blue"></div>
@@ -27,9 +34,7 @@
         </div>
         <h3>Detail Spesifikasi</h3>
         <ul class="item-details">
-          <li>
-            <strong>Mesin:</strong> 313 cc, 1-silinder, berpendingin cairan
-          </li>
+          <li><strong>Mesin:</strong> 313 cc, 1-silinder, berpendingin cairan</li>
           <li><strong>Tenaga Maksimum:</strong> 34 HP @ 9,700 rpm</li>
           <li><strong>Torsi Maksimum:</strong> 28 Nm @ 7,700 rpm</li>
           <li><strong>Transmisi:</strong> 6-percepatan</li>
@@ -42,6 +47,9 @@
       let redBtn = document.getElementById("red");
       let blueBtn = document.getElementById("blue");
       let blackBtn = document.getElementById("black");
+      let redmobileBtn = document.getElementById("redmobile");
+      let bluemobileBtn = document.getElementById("bluemobile");
+      let blackmobileBtn = document.getElementById("blackmobile");
       let bike = document.getElementById("bike");
 
       redBtn.onclick = function () {
@@ -52,6 +60,16 @@
       };
       blackBtn.onclick = function () {
         bike.style.backgroundImage = "url(image/BMW3.png)";
+      };
+
+      redmobileBtn.onclick = function () {
+        bikemobile.src = "image/BMW1mobile.png";
+      };
+      bluemobileBtn.onclick = function () {
+        bikemobile.src = "image/BMW2mobile.png";
+      };
+      blackmobileBtn.onclick = function () {
+        bikemobile.src = "image/BMW3mobile.png";
       };
     </script>
   </body>
