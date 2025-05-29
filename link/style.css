@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  width: 160px;
+  cursor: pointer;
+}
+nav .btn {
+  text-decoration: none;
+  color: #fff;
+  background: #333;
+  padding: 15px 50px;
+  border-radius: 30px;
+}
+.content {
+  margin-top: 10%;
+}
+.content h2 {
+  color: red;
+  font-size: 40px;
+  padding-bottom: 3%;
+}
+.content h1 {
+  font-size: 80px;
+  color: #222;
+  margin-top: -10px;
+}
+.content p {
+  max-width: 300px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
+}
+.content h3 {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.colour-select div {
+  background: #333;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.colour-select-mobile div {
+  background: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.colour-select {
+  display: flex;
+  margin-top: 30px;
+}
+
+.colour-select-mobile {
+  display: none;
+  margin-top: 30px;
+}
+
+.image-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 15px 5%;
+    background-position: top center;
+    background-image: none;
+  }
+
+  nav {
+    margin-bottom: 15px;
+  }
+
+  nav .logo {
+    width: 100px;
+  }
+
+  nav .btn {
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 15px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .image-mobile {
+    display: block;
+  }
+
+  .image-mobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  .colour-select {
+    display: none;
+  }
+
+  .colour-select-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content p {
+    font-size: 11px;
+    max-width: 100%;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .content h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .item-details {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    max-width: 400px;
+  }
+
+  .item-details li {
+    padding: 4px 6px;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+  }
+
+  .item-details li strong {
+    color: #333;
+  }
+}

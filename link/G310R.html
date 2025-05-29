@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW G 310 R | Penjualan Motor</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Style yang spesifik untuk halaman ini */
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        /* Default background-image untuk desktop, sesuai warna merah */
+        background-image: url(https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-racing-red-1690881263111.png?q=80&wm=3);
+        background-position: 150px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 10%;
+        transition: background-image 0.3s;
+      }
+
+      /* Warna untuk tombol pilihan warna desktop */
+      .colour-select #red {
+        background: red;
+      }
+      .colour-select #blue {
+        background: blue; /* Untuk "Polar White with Racing Blue" */
+      }
+      .colour-select #black {
+        background: black; /* Untuk "Cosmic Black" */
+      }
+
+      /* Warna untuk tombol pilihan warna mobile */
+      .colour-select-mobile #redmobile {
+        background: red;
+      }
+      .colour-select-mobile #bluemobile {
+        background: blue; /* Untuk "Polar White with Racing Blue" */
+      }
+      .colour-select-mobile #blackmobile {
+        background: black; /* Untuk "Cosmic Black" */
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          background-image: none; /* Hilangkan background-image di mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="bike">
+      <nav>
+        <a href="../index.html"><img src="../image/logo.png" class="logo" alt="Logo BMW" /></a>
+        <a href="#" class="btn">Rp. 116.000.000</a>
+      </nav>
+      <div class="content">
+        <h2>BMW</h2>
+        <h1>G 310 R</h1>
+        <h3>Tentukan Pilihan Warna</h3>
+        <div class="colour-select-mobile">
+          <div id="redmobile"></div>
+          <div id="bluemobile"></div>
+          <div id="blackmobile"></div>
+        </div>
+        <div class="image-mobile">
+          <img id="bikemobile" src="https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-racing-red-1690881263111.png?q=80&wm=3" alt="BMW G 310 R Merah" />
+        </div>
+        <p>
+          BMW G 310 R adalah motor roadster yang lincah dan sempurna untuk penggunaan di perkotaan maupun petualangan singkat. Dengan desain modern dan mesin bertenaga, G 310 R menawarkan pengalaman berkendara yang menyenangkan dan
+          responsif, cocok untuk pengendara pemula maupun yang berpengalaman.
+        </p>
+
+        <div class="colour-select">
+          <div id="red"></div>
+          <div id="blue"></div>
+          <div id="black"></div>
+        </div>
+        <h3>Detail Spesifikasi</h3>
+        <ul class="item-details">
+          <li><strong>Mesin:</strong> 313 cc, 1-silinder, berpendingin cairan</li>
+          <li><strong>Tenaga Maksimum:</strong> 34 HP @ 9,250 rpm</li>
+          <li><strong>Torsi Maksimum:</strong> 28 Nm @ 7,500 rpm</li>
+          <li><strong>Transmisi:</strong> 6-percepatan</li>
+          <li><strong>Berat:</strong> 164 kg (berat kosong)</li>
+          <li><strong>Kapasitas Tangki:</strong> 11 liter</li>
+          <li><strong>Tinggi Kursi:</strong> 785 mm (standar)</li>
+          <li><strong>Sistem Pengereman:</strong> ABS</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      let redBtn = document.getElementById("red");
+      let blueBtn = document.getElementById("blue");
+      let blackBtn = document.getElementById("black");
+      let redmobileBtn = document.getElementById("redmobile");
+      let bluemobileBtn = document.getElementById("bluemobile");
+      let blackmobileBtn = document.getElementById("blackmobile");
+      let bike = document.getElementById("bike");
+      let bikemobile = document.getElementById("bikemobile"); // Pastikan ini ada
+
+      redBtn.onclick = function () {
+        bike.style.backgroundImage = "url(https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-racing-red-1690881263111.png?q=80&wm=3)";
+      };
+      blueBtn.onclick = function () {
+        bike.style.backgroundImage = "url(https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-polar-white-with-racing-blue-1690881193499.png?q=80&wm=3)";
+      };
+      blackBtn.onclick = function () {
+        bike.style.backgroundImage = "url(https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-cosmic-black-1690881268094.png?q=80&wm=3)";
+      };
+
+      redmobileBtn.onclick = function () {
+        bikemobile.src = "https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-racing-red-1690881263111.png?q=80&wm=3";
+      };
+      bluemobileBtn.onclick = function () {
+        bikemobile.src = "https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-polar-white-with-racing-blue-1690881193499.png?q=80&wm=3";
+      };
+      blackmobileBtn.onclick = function () {
+        bikemobile.src = "https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-cosmic-black-1690881268094.png?q=80&wm=3";
+      };
+    </script>
+  </body>
+</html>

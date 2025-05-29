@@ -1,76 +1,220 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
   <head>
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
-    <title>Penjualan Motor</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Motorrad BMW</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container" id="bike">
-      <nav>
-        <img src="image/logo.png" class="logo" />
-        <a href="#" class="btn">Rp. 1.000.000.000</a>
-      </nav>
-      <div class="content">
-        <h2>BMW</h2>
-        <h1>G 310 RR</h1>
-        <h3>Tentukan Pilihan Warna</h3>
-        <div class="colour-select-mobile">
-          <div id="redmobile"></div>
-          <div id="bluemobile"></div>
-          <div id="blackmobile"></div>
-        </div>
-        <div class="image-mobile">
-          <img id="bikemobile" src="image/BMW1mobile.png" alt="" />
-        </div>
-        <p>
-          Motor BMW adalah sepeda motor buatan BMW Motorrad, divisi sepeda motor dari perusahaan otomotif Jerman, BMW. Motor BMW dikenal luas karena desain premium, teknologi canggih, dan performa tinggi, serta reputasinya dalam dunia tur,
-          petualangan, dan motorsport.
-        </p>
+    <nav class="navbar">
+      <a href="#" class="logo"><img src="image/logo.png" alt="" /></a>
+      <a class="cart" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+          /></svg
+      ></a>
 
-        <div class="colour-select">
-          <div id="red"></div>
-          <div id="blue"></div>
-          <div id="black"></div>
+      <div class="nav-links desktop-only">
+        <div class="search-box">
+          <input type="text" placeholder="Cari motor..." />
+          <button>Cari</button>
         </div>
-        <h3>Detail Spesifikasi</h3>
-        <ul class="item-details">
-          <li><strong>Mesin:</strong> 313 cc, 1-silinder, berpendingin cairan</li>
-          <li><strong>Tenaga Maksimum:</strong> 34 HP @ 9,700 rpm</li>
-          <li><strong>Torsi Maksimum:</strong> 28 Nm @ 7,700 rpm</li>
-          <li><strong>Transmisi:</strong> 6-percepatan</li>
-          <li><strong>Berat:</strong> 174 kg</li>
-          <li><strong>Kapasitas Tangki:</strong> 11 liter</li>
-        </ul>
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+            /></svg
+        ></a>
       </div>
+    </nav>
+
+    <div class="hamburger" id="hamburger-menu">
+      <p>Menu</p>
     </div>
-    <script>
-      let redBtn = document.getElementById("red");
-      let blueBtn = document.getElementById("blue");
-      let blackBtn = document.getElementById("black");
-      let redmobileBtn = document.getElementById("redmobile");
-      let bluemobileBtn = document.getElementById("bluemobile");
-      let blackmobileBtn = document.getElementById("blackmobile");
-      let bike = document.getElementById("bike");
 
-      redBtn.onclick = function () {
-        bike.style.backgroundImage = "url(image/BMW1.png)";
-      };
-      blueBtn.onclick = function () {
-        bike.style.backgroundImage = "url(image/BMW2.png)";
-      };
-      blackBtn.onclick = function () {
-        bike.style.backgroundImage = "url(image/BMW3.png)";
-      };
+    <div class="nav-links mobile-only">
+      <div class="search-box">
+        <input type="text" placeholder="Cari motor..." />
+        <button>Cari</button>
+      </div>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </div>
 
-      redmobileBtn.onclick = function () {
-        bikemobile.src = "image/BMW1mobile.png";
-      };
-      bluemobileBtn.onclick = function () {
-        bikemobile.src = "image/BMW2mobile.png";
-      };
-      blackmobileBtn.onclick = function () {
-        bikemobile.src = "image/BMW3mobile.png";
-      };
-    </script>
+    <div class="sidebar" id="sidebar">
+      <a href="javascript:void(0)" class="close-btn" id="close-sidebar">&times;</a>
+
+      <div class="search-box">
+        <input type="text" placeholder="Cari motor..." />
+        <button>Cari</button>
+      </div>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+
+      <a href="link/motor.html">Koleksi</a>
+      <a href="#"
+        >Cart
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+          /></svg
+      ></a>
+    </div>
+
+    <!-- slider -->
+
+    <div class="slider-container">
+      <div class="overlay-text">
+        <h1>Performa Maksimal, Kendali di Tangan Anda</h1>
+        <a href="link/motor.html"><button class="cta-btn">Lihat Koleksi</button></a>
+      </div>
+      <div class="slider" id="slider">
+        <div class="slide" style="background-image: url('image/slider-1.png')"></div>
+        <div class="slide" style="background-image: url('image/slider-2.png')"></div>
+        <div class="slide" style="background-image: url('image/slider-3.png')"></div>
+      </div>
+      <button class="nav-btn prev" onclick="prevSlide()">❮</button>
+      <button class="nav-btn next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <!-- content -->
+    <section class="konten-motor">
+      <center><h1>Product Kami</h1></center>
+      <div class="grid-container">
+        <div class="item">
+          <img src="https://cdn.bikedekho.com/processedimages/bmw/g-310-rr/source/g-310-rr67500c2595a34.jpg?imwidth=890&impolicy=resize" alt="BMW 1" />
+          <h3>BMW G 310 RR</h3>
+          <a href="link/G310RR.html"> <button>Beli Sekarang</button></a>
+        </div>
+        <div class="item">
+          <img src="image/1250gshitam.png" alt="BMW 2" />
+          <h3>BMW R1250GS</h3>
+          <a href="link/1250gs.html"> <button>Beli Sekarang</button></a>
+        </div>
+        <div class="item">
+          <img src="https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/undefined-hockenheim-silver-metallic--racing-red-1590756554299.jpg?q=80&wm=3" alt="BMW 3" />
+          <h3>BMW F900R</h3>
+          <a href="link/F900R.html"> <button>Beli Sekarang</button></a>
+        </div>
+        <div class="item">
+          <img src="https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-racing-red-1690881263111.png?q=80&wm=3" alt="BMW 4" />
+          <h3>BMW G310R</h3>
+          <a href="link/G310R.html"> <button>Beli Sekarang</button></a>
+        </div>
+        <div class="item">
+          <img src="https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-blackstorm-metallic-1720177853247.png?q=80" alt="BMW 5" />
+          <h3>BMW R NineT</h3>
+          <a href="link/R12nineT.html"> <button>Beli Sekarang</button></a>
+        </div>
+        <div class="item">
+          <img src="https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-blackstorm-metallic-1677042454441.png?q=80" alt="BMW 6" />
+          <h3>BMW K1600B</h3>
+          <a href="link/K1600B.html"> <button>Beli Sekarang</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Komentar -->
+    <section class="comment-section">
+      <h2>Komentar</h2>
+      <form class="comment-form">
+        <div class="comments-container">
+          <div class="comment">
+            <div class="author">– Agus Setiawan</div>
+            <p>"Motor BMW saya sangat nyaman dan performanya luar biasa! Pelayanan dealer juga cepat dan ramah."</p>
+          </div>
+          <div class="comment">
+            <div class="author">– Rina Sari</div>
+            <p>"Desain elegan dan teknologi canggih membuat saya bangga memakai BMW setiap hari."</p>
+          </div>
+          <div class="comment">
+            <div class="author">– Dedi Kurnia</div>
+            <p>"Proses pembelian mudah dan fasilitas kredit yang fleksibel sangat membantu saya."</p>
+          </div>
+          <div class="comment">
+            <div class="author">– Fitri Handayani</div>
+            <p>"Motor BMW saya sangat bertenaga dan hemat bahan bakar, cocok untuk perjalanan jauh."</p>
+          </div>
+          <div class="comment">
+            <div class="author">– Budi Prasetyo</div>
+            <p>"Pelayanan after sales memuaskan, garansi lengkap, dan cepat dalam perbaikan."</p>
+          </div>
+          <div class="comment">
+            <div class="author">– Siti Nurhaliza</div>
+            <p>"Kualitas premium dan desain motor BMW selalu jadi perhatian utama saya dalam memilih kendaraan."</p>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>BMW Motor</h3>
+          <p>Solusi berkendara mewah dan bertenaga.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Beranda</a>
+          <a href="#">Koleksi</a>
+          <a href="#">Tentang Kami</a>
+          <a href="#">Kontak</a>
+        </div>
+        <div class="footer-social">
+          <p>Ikuti Kami</p>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 BMW Motor Indonesia. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const sidebar = document.getElementById("sidebar");
+    const closeSidebarBtn = document.getElementById("close-sidebar");
+
+    // Ketika hamburger diklik, buka sidebar
+    hamburgerMenu.addEventListener("click", () => {
+      sidebar.style.width = "250px"; // Lebar sidebar saat terbuka
+    });
+
+    // Ketika tombol close diklik, tutup sidebar
+    closeSidebarBtn.addEventListener("click", () => {
+      sidebar.style.width = "0"; // Tutup sidebar
+    });
+  });
+  const slider = document.getElementById("slider");
+  const slides = document.querySelectorAll(".slide");
+  let index = 0;
+
+  function showSlide(i) {
+    index = (i + slides.length) % slides.length;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(index + 1);
+  }
+
+  function prevSlide() {
+    showSlide(index - 1);
+  }
+
+  setInterval(() => {
+    nextSlide();
+  }, 4000);
+</script>

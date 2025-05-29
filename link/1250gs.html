@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW R 1250 GS | Penjualan Motor</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(../image/1250gskuning.png);
+        background-position: 150px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 10%;
+        transition: background-image 0.3s;
+      }
+
+      .colour-select #red {
+        background: yellow;
+      }
+      .colour-select #blue {
+        background: black;
+      }
+      .colour-select #black {
+        background: white;
+      }
+
+      .colour-select-mobile #redmobile {
+        background: yellow;
+      }
+      .colour-select-mobile #bluemobile {
+        background: black;
+      }
+      .colour-select-mobile #blackmobile {
+        background: white;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          background-image: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="bike">
+      <nav>
+        <a href="../index.html"><img src="../image/logo.png" class="logo" alt="Logo BMW" /></a>
+        <a href="#" class="btn">Rp. 785.000.000</a>
+      </nav>
+      <div class="content">
+        <h2>BMW</h2>
+        <h1>R 1250 GS</h1>
+        <h3>Tentukan Pilihan Warna</h3>
+        <div class="colour-select-mobile">
+          <div id="redmobile"></div>
+          <div id="bluemobile"></div>
+          <div id="blackmobile"></div>
+        </div>
+        <div class="image-mobile">
+          <img id="bikemobile" src="../image/1250gskuning.png" alt="BMW R 1250 GS Kuning" />
+        </div>
+        <p>
+          Motor BMW R 1250 GS adalah ikon dalam dunia petualangan, dikenal dengan kombinasi sempurna antara performa tangguh, kenyamanan berkendara, dan kemampuan menaklukkan berbagai medan. Ditenagai oleh mesin Boxer yang legendaris, motor
+          ini siap menemani setiap perjalanan Anda, dari jalan raya hingga jalur off-road.
+        </p>
+
+        <div class="colour-select">
+          <div id="red"></div>
+          <div id="blue"></div>
+          <div id="black"></div>
+        </div>
+        <h3>Detail Spesifikasi</h3>
+        <ul class="item-details">
+          <li><strong>Mesin:</strong> 1.254 cc, 2-silinder, Boxer, berpendingin cairan/udara</li>
+          <li><strong>Tenaga Maksimum:</strong> 136 HP @ 7,750 rpm</li>
+          <li><strong>Torsi Maksimum:</strong> 143 Nm @ 6,250 rpm</li>
+          <li><strong>Transmisi:</strong> 6-percepatan</li>
+          <li><strong>Berat:</strong> 249 kg (berat kosong)</li>
+          <li><strong>Kapasitas Tangki:</strong> 20 liter</li>
+          <li><strong>Tinggi Kursi:</strong> 850 mm (standar)</li>
+          <li><strong>Sistem Pengereman:</strong> ABS Pro</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      let redBtn = document.getElementById("red");
+      let blueBtn = document.getElementById("blue");
+      let blackBtn = document.getElementById("black");
+      let redmobileBtn = document.getElementById("redmobile");
+      let bluemobileBtn = document.getElementById("bluemobile");
+      let blackmobileBtn = document.getElementById("blackmobile");
+      let bike = document.getElementById("bike");
+      let bikemobile = document.getElementById("bikemobile"); // Pastikan ini ada
+
+      redBtn.onclick = function () {
+        bike.style.backgroundImage = "url(../image/1250gskuning.png)";
+      };
+      blueBtn.onclick = function () {
+        bike.style.backgroundImage = "url(../image/1250gshitam.png)";
+      };
+      blackBtn.onclick = function () {
+        bike.style.backgroundImage = "url(../image/1250gsputih.png)";
+      };
+
+      redmobileBtn.onclick = function () {
+        bikemobile.src = "../image/1250gskuning.png";
+      };
+      bluemobileBtn.onclick = function () {
+        bikemobile.src = "../image/1250gshitam.png";
+      };
+      blackmobileBtn.onclick = function () {
+        bikemobile.src = "../image/1250gsputih.png";
+      };
+    </script>
+  </body>
+</html>
